@@ -8,6 +8,7 @@ const app = express();
 app.get('/', (req, res) => {
 
     let str = "";
+    res.set('Content-Type', 'application/json');
     try {
         const wordsCount = (req.query.words) ? Number(req.query.words) : 10;
         str = shitGenerator(wordsCount)
