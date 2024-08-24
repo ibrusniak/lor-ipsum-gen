@@ -1,4 +1,5 @@
 {
+  "type": "module",
   "name": "loripsumapi",
   "version": "1.0.0",
   "description": "Node.js server for generating 'lorem ipsum' text",
