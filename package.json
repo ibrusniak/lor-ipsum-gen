@@ -1,0 +1,11 @@
+{
+  "name": "loripsumapi",
+  "version": "1.0.0",
+  "description": "Node.js server for generating 'lorem ipsum' text",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ivan Brusniak",
+  "license": "ISC"
+}
