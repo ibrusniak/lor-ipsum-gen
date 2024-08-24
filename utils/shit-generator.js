@@ -1,4 +1,17 @@
 
-export default () => {
-    return 'Piece of shit :)'
+export default (wordsCount) => {
+    if (wordsCount < 1) return '';
+    let res = '';
+    const arr = str.split(' ');
+    for (var x = 0; x < wordsCount; x++) {
+        if (res != '') res += ' ';
+        const randomElement = arr[Math.floor(Math.random() * arr.length)];
+        res += randomElement;
+    }
+    res = res.toLowerCase();
+    res += '.';
+    return res.charAt(0).toUpperCase() + res.slice(1);
 }
+
+const str = 'Suspendisse justo metus auctor quis ligula at gravida hendrerit libero Pellentesque sit amet nisl maximus porta mauris quis dictum tellus Curabitur euismod purus vestibulum pulvinar elementum dolor diam vestibulum eros ac posuere turpis urna eu purus Duis a felis sit amet diam luctus mattis Cras erat lacus ornare mollis urna lacinia iaculis porta leo Cras ac nisi fermentum vehicula metus sit amet dictum nulla Suspendisse lacinia laoreet blandit Nunc porta ante quis velit egestas tincidunt  Donec ex mi ornare vel augue ac euismod ornare felis In hac habitasse platea dictumst Donec eget suscipit turpis eu tincidunt est Donec sodales quis arcu id fermentum Nam eu risus et nulla ultrices porttitor quis quis felis Praesent ac augue vitae magna molestie scelerisque vitae nec nulla Curabitur tincidunt vehicula posuere Nulla venenatis leo nibh quis vehicula est ullamcorper ut Orci varius natoque penatibus et magnis dis parturient montes nascetur ridiculus mus Quisque maximus ornare risus sit amet commodo Praesent porttitor libero eget maximus iaculis Ut accumsan auctor urna in congue orci luctus sit amet  Fusce sed semper velit Aliquam vel pretium justo Fusce sit amet mi ac nisl suscipit venenatis Nullam mattis lectus et iaculis fermentum magna lectus laoreet diam non congue lacus magna ullamcorper neque Mauris faucibus ultrices eros eleifend semper risus malesuada at Donec semper magna nec ante eleifend tempor Fusce quam nunc pretium non porta vitae fringilla vel metus Aenean euismod lorem vel malesuada laoreet Quisque feugiat lacus et libero mattis auctor Ut in sodales ipsum Fusce eget felis ipsum Nunc vitae felis et est tempor venenatis Suspendisse aliquam magna eu tristique tristique Nam placerat velit et scelerisque volutpat risus urna eleifend justo laoreet porta arcu justo eget eros  Phasellus justo velit molestie sed laoreet sit amet pharetra iaculis purus Lorem ipsum dolor sit amet consectetur adipiscing elit Nullam venenatis luctus blandit Cras eu orci auctor efficitur dolor a scelerisque mi Cras in pulvinar orci Mauris venenatis sodales quam euismod pretium nisl tincidunt nec Donec rutrum dui metus quis tincidunt arcu sodales sit amet Class aptent taciti sociosqu ad litora torquent per conubia nostra per inceptos himenaeos In convallis scelerisque lorem ac lobortis Duis eu sem sed lorem sollicitudin tristique Phasellus consectetur imperdiet pharetra  Nulla rhoncus tortor non euismod blandit Nam id purus id turpis iaculis sodales vitae quis dolor Ut auctor urna mi eu ultrices quam sollicitudin mollis Ut congue vel est sed ornare Integer quis nibh vestibulum commodo mauris ac mollis lorem Sed fringilla interdum ligula vel placerat libero venenatis sed Donec eu odio sit amet sem dapibus mollis Nam in felis quis mauris dictum cursus Praesent lobortis consequat sem quis vehicula Fusce eget elit semper auctor felis et bibendum dolor Maecenas sed egestas turpis Sed feugiat bibendum turpis ut porttitor felis cursus in Sed ut enim lobortis viverra felis ac luctus purus Etiam quis rhoncus felis a aliquam augue Donec auctor lorem massa vel eleifend leo mollis in';
+    
