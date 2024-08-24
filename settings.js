@@ -1,4 +1,5 @@
 
 export default {
-    PORT: 8855
+    PORT: 8855,
+    HOSTNAME: 'localhost'
 }

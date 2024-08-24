@@ -22,4 +22,6 @@ app.get('/', (req, res) => {
     );
 });
 
-app.listen(settings.PORT)
+app.listen(settings.PORT, settings.HOSTNAME, null, () => {
+    console.info(`Server 'Loren ipsum generator' listening at http://${settings.HOSTNAME}:${settings.PORT}`);
+});
